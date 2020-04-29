@@ -7,6 +7,7 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using Plugin.Fingerprint;
+using Plugin.CurrentActivity;
 
 namespace Finger.Droid
 {
@@ -22,6 +23,7 @@ namespace Finger.Droid
 
             base.OnCreate(savedInstanceState);
 
+            CrossCurrentActivity.Current.Init(this, savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
