@@ -1,2 +1,2 @@
 # Fingerprint-in-Xamarin.-Forms 
-I do tests on the fingerprint of xamarin.forms
+Using the Plugin.Fingerprint in Xamarin.Forms
